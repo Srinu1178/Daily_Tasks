@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Operator:Operator is a symbol that perform some action between one or 
 # more than one objects
 
@@ -128,7 +127,6 @@ print(state!='Delhi')
 age = int(input("Enter your age: "))
 print(age>=18)
 
-=======
 #Operator:Operator is a symbol that perform some action between one or 
 # more than one objects
 
@@ -142,4 +140,3 @@ print(f'Division of {num1} and {num2} is {num1/num2}')
 print(f'Floor division of {num1} and {num2} is {num1//num2}')
 print(f'Modulus of {num1} and {num2} is {num1%num2}')
 print(f'{num1} to the power of {num2} is {num1**num2}')
->>>>>>> 860a6b21347f6966c926cb9ea90b8a2aae4ed483
