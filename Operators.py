@@ -127,8 +127,100 @@ print(state!='Delhi')
 age = int(input("Enter your age: "))
 print(age>=18)
 
-print(f'Multiplication of {num1} and {num2} is {num1*num2}')
-print(f'Division of {num1} and {num2} is {num1/num2}')
-print(f'Floor division of {num1} and {num2} is {num1//num2}')
-print(f'Modulus of {num1} and {num2} is {num1%num2}')
-print(f'{num1} to the power of {num2} is {num1**num2}')
+# Logical Operators
+# and
+#it is used to evalute one or more than one condition at once
+
+#AND Operator:
+# It returning True only when all the conditions are true
+age =21
+citizen = 'Indian'
+print(age>=18 and citizen=='Indian')
+
+# or operator:
+# It returns true only when atleast one conditions are true
+
+#or operator
+degree = True
+btech = False
+print(degree or btech)
+
+# checking weather it is a holiday based on
+# weekend or festive day
+weekend = False
+festiveDay = True
+print(weekend or festiveDay)
+
+#payment with card or cash or upi
+card = 'no'
+cash = 'no'
+upi = 'yes'
+print(card=='yes' or cash == 'yes'or upi == 'yes')
+
+# findin a groom
+salary = 70000
+cibil = 820
+ownhouse = 'yes'
+print(salary == 10000 and cibil >= 850 and ownhouse=='yes')
+
+# not: It reverses the result
+passed = True
+print(not passed)
+
+login = 'yes'
+print(not login=='yes')
+
+
+# Identity operators
+# These are used to check wheather two variables pointing to
+# the same object or not
+num1 = 10
+num2 = 10
+print(num1 is num2)
+
+chinnodu = 'sarath'
+student = chinnodu
+
+print(chinnodu is student)
+
+teslaCeo = 'Elon musk'
+spaceXCeo = 'Elon musk'
+print(teslaCeo is spaceXCeo)
+
+#is not
+peddodu = "Venkatesh"
+chinnodu = "Mahesh"
+print(peddodu is not chinnodu)
+
+developer = 'Writes code'
+tester = 'test code'
+print(developer is not tester)
+
+
+#code optimization
+# The program creates only one object for all variables if the object
+# size is within limit if the size of the object beyond that limit 
+# python creates different objects for different variables
+print("code optimization.....")
+list1 = [1,2,3,4,5,6]
+list2 = [1,2,3,4,5,6]
+print(list1 is list2)
+print(list1 == list2)
+
+#membership operator
+print("Membership operators.......")
+names = ['shankar','dinesh','jayadeep','shiva']
+print('jayadeep' in names)
+print('mahesh' in names)
+
+# not in
+print('shankar' not in names)
+print('venkat' not in names)
+
+
+# numbers from -5 to 256 are readily available in python beyond them are 
+# generated at run time
+num1 = int('-257')
+num2 = int('-257')
+print(num1 is num2)
+
