@@ -1,3 +1,14 @@
+# write a program to count the number of factors of a number
+
+n = int(input("Enter the number:"))
+count = 0
+i = 1
+while i<=n:
+    if n%i==0:
+        count+=1
+    i+=1
+print(f'Count the no of factors in the given number is {count}')   
+
 
 
 m = int(input("starting number: "))
@@ -43,7 +54,7 @@ for ele in str1:
         count+=1
 print(f'The number of vowels in the {str1}: {count}')
 
-Tasks
+# Tasks
 # 1. Write a program to print all vowels in a string with repetation
 word = input("Enter the word: ")
 vowels = 'aeiou'
@@ -53,6 +64,12 @@ for ele in word:
         vowels1+=ele
 
 print(f'vowels in the given word {word} is :{vowels1}')
+
+'''
+Output:
+Enter the word: Python Programming
+vowels in the given word Python Programming is :ooai
+'''
 
 # Write a program to print the count and consonants in a string
 
@@ -65,6 +82,12 @@ while i<len(str2):
         count+=1
     i+=1
 print(f'The Number of consonants in the {str2}:{count}')
+
+'''
+Output:
+Enter the string: Hello World
+The Number of consonants in the Hello World:8
+'''
 
 # write a program to print count and vowels in a string without repetation
 
@@ -81,6 +104,13 @@ while i < len(str4):
     i+=1
 print(f'The count of vowels without repetation: {count}')
 print(f'The number of vowels in the string:{vowels1}')
+
+'''
+Output:
+Enter the string: Srinivasu
+The count of vowels without repetation: 3
+The number of vowels in the string:iau
+'''
 
 # write a program to print count of alphabets,numbers and special characters
 alphabets = 0
@@ -101,6 +131,14 @@ while i<len(word5):
 print(f"No of alphabets in the {word5}:{alphabets}")
 print(f"No of numbers in the {word5}:{numbers}")
 print(f"No of special in the {word5}:{special}")
+
+'''
+Output:
+Enter the string: Python@#3245
+No of alphabets in the Python@#3245:6
+No of numbers in the Python@#3245:4
+No of special in the Python@#3245:2
+'''
 
 
 
