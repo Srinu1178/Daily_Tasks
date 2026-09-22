@@ -72,7 +72,68 @@ nums = [1,4,6,4,2,1,3,5]
 nums.remove(4)
 print(nums)
 
-  
+
+#sort:
+
+list1 = [45,23,54,19,12,11,33]
+list1.sort()
+print(list1)
+
+list_names =["rakesh",'srinu','manoj','ravi','bhai'] #based on asci values of each characcter for sorting
+list_names.sort()
+print(list_names)
+
+# reverse()
+list1 = [10,12,13]
+list1.reverse()
+print(list1)
+
+#tuple methods
+#count
+nums = [4,5,6,3,4,5,6,3,5,6,3,56,1,2,4]
+print(nums.count(4))
+
+#index
+print(nums.index(5))
+
+#set methods
+
+trainers={"venkat","navinder","manoj",'nayab'}
+
+trainers.add("Subramanyam")
+print(trainers)
+
+trainers.update(['Bhai','Rechel'])
+ 
+print(trainers)
+
+set1 = {1,2,3}
+set2 = {1,2,3,4}
+print(set1.issubset(set2))
+print(set2.issuperset(set1))
+
+print(set1.union(set2)) 
+
+
+#dictionary Methods
+details = {'name':'balu','city':'SR Nagar'}
+print(details['city'])
+
+details['city'] = 'Bangalore'
+print(details)
+print(details["city"])
+
+details['phone'] = 9805678124
+
+print(details)
+
+print(details.get('name'))
+
+print(details.get('quali',"qualification does not exist"))
+
+
+
+
 
 
 
