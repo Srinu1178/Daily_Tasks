@@ -44,10 +44,64 @@ print(username)
 print(domain)
 
 
+#Set Comprehension
+
+str1 = 'education'
+setComp = {ch for ch in str1}
+
+print(setComp)
+
+steVowels = {ch for ch in str1 if ch in 'aeiou'}
+print(steVowels)
+
+# write a set comprehension to generate a set of all unique words from a string
+
+bio = '''My name is venkata narayana and i have cold and cough and not able to 
+take class but still taking class because I want salary'''
 
 
+uniWords = {word for word in bio.split()}
+
+print(uniWords)
+
+# Dictionary comprehension
+nums = [4,7,9,2,-1,3]
+
+dictExp = {num:num**3 for num in nums}
+
+print(dictExp)
+
+words = ['python','Artificial Intelligence','Machine Learning','Java','D22 Class']
+
+#generate a dictionary where len of each word is mapping
+#to its word
+wordDic = {len(word):word for word in words if len(word)>5}
+
+print(wordDic)
 
 
+temps = (34,56,23,55,12,-4)
+# write a comprehension to generate a dictionary where each cel temp
+#is mapping to its equivalent fahrenheit
+
+dictCel = {temp:(temp*9/5)+32 for temp in temps}
+print(dictCel)
+
+
+marks = {'ipsitha':72,'benjaminu':32,'lankesh':66,
+         'doritha':99,'eeston':21,'jadal':12.5,'peddi':100}
+
+result = {key:"pass" if mark>35 else "Fail"  for key,mark in marks.items()}
+
+print(result)
+
+
+str1 = 'Sylvester Stallone'
+# write a comprehension to generate a dict where each char is mapping to its number
+# of occurences in the string
+
+charMap = {ch:str1.count(ch) for ch in str1 if ch!=" "}
+print(charMap)
 
 
 
